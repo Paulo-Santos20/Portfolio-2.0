@@ -28,21 +28,39 @@ function scrollHeader(){
 window.addEventListener('scroll', scrollHeader)
 
 /*==================== */
-
-function writeTitle(){
-    function activeWorld(element){
-        const arrText = element.innerHTML.split('');
-        element.innerHTML = '';
-        arrText.forEach((letra, i) =>{
-            setTimeout(()=>{
-                element.innerHTML += letra;
-            }, 75 * i);
-        })
-    }
+function writeTitle() {
     const title = document.querySelector('.digitando');
-    activeWorld(title);
+    const texts = ["Desenvolvedor Web", "UI/UX Designer"];
+    let currentTextIndex = 0;
+    let isDeleting = false;
+    let currentText = '';
+    
+    function typeText() {
+        currentText = texts[currentTextIndex];
+        if (isDeleting) {
+            title.textContent = currentText.slice(0, title.textContent.length - 1);
+        } else {
+            title.textContent = currentText.slice(0, title.textContent.length + 1);
+        }
+        
+        if (!isDeleting && title.textContent === currentText) {
+            isDeleting = true;
+            setTimeout(typeText, 1000);
+        } else if (isDeleting && title.textContent === '') {
+            isDeleting = false;
+            currentTextIndex = (currentTextIndex + 1) % texts.length;
+            setTimeout(typeText, 200);
+        } else {
+            setTimeout(typeText, isDeleting ? 50 : 150);
+        }
+    }
+    
+    typeText();
 }
+
 writeTitle();
+
+
 
 function aboutMe(){
     const divExperience = document.querySelectorAll('.experience_content div'); 
