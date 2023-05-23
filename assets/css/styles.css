@@ -386,7 +386,7 @@ main .sobre{
   max-width: 60%;
   border-radius: 4px;
   filter: blur(0);
-  background-color:#70707075 ;
+  background-color:#70707075;
 }
 
 .sobre img:hover{
@@ -441,7 +441,7 @@ main .sobre{
 }
 
 .sobre_info i{
-  color: #dc3545;
+  color:hsl(174, 63%, 40%);
   display: inline-block;
   padding-right: 15px;
   font-size: 1.5rem;
@@ -475,7 +475,7 @@ main .sobre{
 /* My Service */
 
 .services{
-  background-color: #151515;
+  background-color: #e0dcdd;
   margin-top: -30px;
   padding: 60px;
 }
@@ -483,7 +483,7 @@ main .sobre{
 
 .my_service{
   padding: 60px;
-  color: #fff;
+  color: #707070;
 }
 
 .my_service ul {
@@ -505,13 +505,14 @@ main .sobre{
   text-align: center;
   max-width: 300px;
   height: 300px;
-  background-color: #222;
+  background-color: #70707075;
 
 }
 
 .my_service ul li i {
   font-size: 2.7rem;
-  color: #dc3545;
+  color: hsl(174, 63%, 40%)
+
 }
 
 .my_service ul li h3{
@@ -522,7 +523,7 @@ main .sobre{
 }
 
 .my_service ul li p{
-  color: #707070;
+  color: #050505;
   font-size: 1.1rem;
 }
 
@@ -555,15 +556,17 @@ main .sobre{
 .my_service li:hover::before{
   width: 100%;
   height: 100%;
-  border-top: 2px solid red;
-  border-right: 2px solid red;
+  border-top: 2px solid hsl(174, 63%, 40%)  ;
+  border-right: 2px solid hsl(174, 63%, 40%)  ;
 }
 
 .my_service li:hover::after{
   width: 100%;
   height: 100%;
-  border-bottom: 2px solid red;
-  border-left: 2px solid red;
+  border-bottom: 2px solid hsl(174, 63%, 40%)
+  ;
+  border-left: 2px solid hsl(174, 63%, 40%)
+  ;
 }
 
 
