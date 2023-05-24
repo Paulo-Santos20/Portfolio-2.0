@@ -275,7 +275,7 @@ img {
 .section-div div h2{
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  color: #000000;
+  color: hsl(174, 63%, 40%);
 }
 
 .section-div div p{
@@ -295,11 +295,9 @@ img {
 }
 
 .section-div div a:hover{
-  background-color:hsl(174, 63%, 40%)
-  ;
+  background-color:hsl(174, 63%, 40%);
   color: white;
 }
-
 
 .section-div img {
   max-width:60%;
@@ -383,7 +381,7 @@ main .sobre{
   animation: sideSection .5s ease-in-out forwards;
   cursor: pointer;
   grid-row: 2;
-  max-width: 60%;
+  max-width: 100%;
   border-radius: 4px;
   filter: blur(0);
   background-color:#70707075;
@@ -516,7 +514,7 @@ main .sobre{
 }
 
 .my_service ul li h3{
-  color: #fff;
+  color: black;
   font-size: 1.6rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -556,17 +554,15 @@ main .sobre{
 .my_service li:hover::before{
   width: 100%;
   height: 100%;
-  border-top: 2px solid hsl(174, 63%, 40%)  ;
-  border-right: 2px solid hsl(174, 63%, 40%)  ;
+  border-top: 2px solid hsl(174, 63%, 40%);
+  border-right: 2px solid hsl(174, 63%, 40%);
 }
 
 .my_service li:hover::after{
   width: 100%;
   height: 100%;
-  border-bottom: 2px solid hsl(174, 63%, 40%)
-  ;
-  border-left: 2px solid hsl(174, 63%, 40%)
-  ;
+  border-bottom: 2px solid hsl(174, 63%, 40%);
+  border-left: 2px solid hsl(174, 63%, 40%);
 }
 
 
@@ -585,12 +581,13 @@ main .sobre{
   justify-content: center;
   gap: 10px;
   align-items: start;
+  background-color: #e0dcdd;
 }
 
 .resume_generica h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
-  background-color: #ff5d56;
+  background-color: hsl(174, 63%, 40%);
   justify-self: start;
   padding: 10px;
   border-radius: 3px;
@@ -614,7 +611,7 @@ main .sobre{
 }
 
 .experience_content ul {
-  color: #ff5d56;
+  color: black;
   gap: 10px;
   display: flex;
   cursor: pointer;
@@ -623,7 +620,7 @@ main .sobre{
 }
 
 .resume_generica .experience_content div{
-  background-color: #222;
+  background-color: #b8b5b5;
   padding: 40px;
   display: none;
   animation: sideSection .5s ease-in-out forwards;
@@ -634,13 +631,13 @@ main .sobre{
 }
 
 .experience_content ul li.active {
-  color: #3e3d3d;
+  color: hsl(174, 63%, 40%);
 }
 
 .resume_generica .experience_content div::before{
   content: '';
   border-right: 30px solid transparent; 
-  border-bottom: 30px solid #222;
+  border-bottom: 30px solid hsl(174, 63%, 40%);
   position: absolute;
   top: -20px;
   left: 30px; 
@@ -648,7 +645,7 @@ main .sobre{
 }
 
 .resume_generica .experience_content div span{
-  color: #dc3545;
+  color: hsl(174, 63%, 40%);
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
 }
@@ -668,7 +665,7 @@ main .sobre{
 /* Diplomas e Cursos */
 
 .resume_generica .education_content div{
-  background-color: #222;
+  background-color: #b8b5b5;
   padding: 40px;
   display: none;
   animation: sideSection .5s ease-in-out forwards;
@@ -679,12 +676,12 @@ main .sobre{
 }
 
 .education_content ul li.active {
-  color: #3e3d3d;
+  color: hsl(174, 63%, 40%);
 }
 
 
 .education_content ul {
-  color: #ff5d56;
+  color: black;
   gap: 10px;
   display: flex;
   cursor: pointer;
@@ -695,7 +692,7 @@ main .sobre{
 .resume_generica .education_content div::before{
   content: '';
   border-right: 30px solid transparent; 
-  border-bottom: 30px solid #222;
+  border-bottom: 30px solid hsl(174, 63%, 40%);
   position: absolute;
   top: -20px;
   left: 30px; 
@@ -703,7 +700,7 @@ main .sobre{
 }
 
 .resume_generica .education_content div span{
-  color: #dc3545;
+  color: hsl(174, 63%, 40%);
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   
