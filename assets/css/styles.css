@@ -13,7 +13,7 @@
   --first-color-alt: hsl(var(--hue), var(--sat), 36%);
   --title-color: hsl(var(--hue), 12%, 15%);
   --text-color: hsl(var(--hue), 8%, 35%);
-  --body-color: hsl(var(--hue), 100%, 99%);
+  --body-color: #e0dcdd;
   --container-color: #FFF;
 
   /*========== Font and typography ==========*/
@@ -82,12 +82,6 @@ img {
   height: 100vh;
 }
 
-/*=============== LAYOUT ===============*/
-.container {
-  max-width: 968px;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
 
 /*=============== HEADER ===============*/
 .header {
@@ -338,8 +332,7 @@ main .sobre{
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
   justify-content: center;
-  padding: 40px;
-  background-color: #e0dcdd;  
+  padding: 40px; 
 }
 
 .sobre_titulo{
@@ -473,7 +466,6 @@ main .sobre{
 /* My Service */
 
 .services{
-  background-color: #e0dcdd;
   margin-top: -30px;
   padding: 60px;
 }
@@ -581,7 +573,6 @@ main .sobre{
   justify-content: center;
   gap: 10px;
   align-items: start;
-  background-color: #e0dcdd;
 }
 
 .resume_generica h2 {
@@ -738,7 +729,7 @@ main .sobre{
   padding: 10px 30px;
   border-radius: 3px;
   text-transform: uppercase;
-  background-color: #ff5d56;
+  background-color: hsl(174, 63%, 40%);
   font-size: 1.5rem;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 30px;
