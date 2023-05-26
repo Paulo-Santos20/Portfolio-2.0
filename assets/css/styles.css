@@ -178,71 +178,6 @@ img {
   box-shadow: 0 1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
 }
 
-/*=============== MEDIA QUERIES ===============*/
-/* For small devices */
-/* Remove if you choose, the minimalist design */
-@media screen and (max-width: 320px) {
-  .nav__name {
-    display: none;
-  }
-}
-
-/* For medium devices */
-@media screen and (min-width: 576px) {
-  .nav__list {
-    justify-content: center;
-    column-gap: 3rem;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  body {
-    margin: 0;
-  }
-  .section {
-    padding: 7rem 0 2rem;
-  }
-  .nav {
-    height: calc(var(--header-height) + 1.5rem); /* 4.5rem */
-  }
-  .nav__img {
-    display: none;
-  }
-  .nav__icon {
-    display: none;
-  }
-  .nav__name {
-    font-size: var(--normal-font-size);
-    /* display: block; */ /* Minimalist design, visible labels */
-  }
-  .nav__link:hover {
-    color: var(--first-color);
-  }
-
-  /* First design, remove if you choose the minimalist design */
-  .active-link::before {
-    content: '';
-    position: absolute;
-    bottom: -.75rem;
-    width: 4px;
-    height: 4px;
-    background-color: var(--first-color);
-    border-radius: 50%;
-  }
-
-  /* Minimalist design */
-  /* .active-link::before{
-      bottom: -.75rem;
-  } */
-}
-
-/* For large devices */
-@media screen and (min-width: 1024px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 
 
 /* CONTENT *
@@ -900,107 +835,6 @@ main .sobre{
   }
 }
 
-/* Responsividade */
-
-@media (max-width: 1089px){
-  .resume_generica .experience_content, .education_content{
-      justify-self: center;
-      grid-column: 1/-1;
-  }
-
-  .resume_generica .education{
-      grid-column: 1/-1;
-      grid-row: 3;
-      justify-self: center;
-      margin: 30px 0;
-  }
-  .resume_generica .experience{
-      grid-column: 1/-1;
-      grid-row: 1;
-      justify-self: center;
-      
-  }
-
-  .cursos {
-      grid-template-columns: 1fr;
-  }
-
-  .cursos .funfacts{
-      margin-bottom: 30px;
-      text-align: center;
-      grid-template-columns: 1fr;
-      justify-self: center;
-      grid-column: 1;
-  }
-
-  .cursos .funfacts h2{
-      justify-self: center;
-  }
-
-  .cursos .my_skills h2{
-      justify-self: center;
-  }
-
-  .cursos .my_skills{
-      
-      text-align: center;
-      grid-template-columns: 1fr;
-      justify-self: center;
-      grid-column: 1/-1;
-  }
-}
-
-
-
-@media(max-width: 992px){
-
-  .section-div img {
-      display: none;
-  }
-  .section-div{
-      background-image: url(../img/photo.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      
-  }
-
-  header .navegacao-primaria{
-      display: none;
-  }
-
-  header {
-      justify-content: space-between;
-      padding: 30px 70px;
-  }
-
-  header i{
-      color:#f7f7f7;
-      font-size: 2rem;
-  }
-
-  header .navegacao-primaria.ativado{
-      background: linear-gradient(rgba(43, 42, 42, 0.176), rgba(46, 46, 46, 0.724));
-      position: absolute;
-      display: grid;
-      top: 80px;
-      color: white;
-      z-index: 1;
-      padding: 30px;
-      font-size: 1.3rem;
-      font-weight: bold;
-      border-radius: 0 0 4px 4px;
-      right: 20px;
-      animation: upSection .8s ease-in-out forwards;
-  }
-
-  .sobre img{
-      grid-column: 1/-1;
-      justify-self: center;
-  }
-  .sobre_conteudo{
-      grid-column: 1/-1;
-  }
-}
 
 .container_projetos {
   display: flex;
@@ -1114,7 +948,7 @@ main .sobre{
   height: 60px;
   float: left;
   margin: 0 5px;
-  background: #333;
+  background: #b8b5b5;
   border-radius: 50px;
   box-shadow: 0px 10px 10px #0000;
   cursor: pointer;
@@ -1202,5 +1036,179 @@ main .sobre{
 
 .button a {
   cursor: pointer;
-  background-color: #333;
+  background-color: #b8b5b5;
 }
+
+
+/*----------------Responsividade---------------*/
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container_projetos img{
+    height: 23vh;
+    width: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container_projetos img{
+    height: 29vh;
+    width: auto;
+  }  
+}
+@media (max-width: 1089px){
+  .resume_generica .experience_content, .education_content{
+      justify-self: center;
+      grid-column: 1/-1;
+  }
+
+  .resume_generica .education{
+      grid-column: 1/-1;
+      grid-row: 3;
+      justify-self: center;
+      margin: 30px 0;
+  }
+  .resume_generica .experience{
+      grid-column: 1/-1;
+      grid-row: 1;
+      justify-self: center;
+      
+  }
+  .cursos {
+      grid-template-columns: 1fr;
+  }
+
+  .cursos .funfacts{
+      margin-bottom: 30px;
+      text-align: center;
+      grid-template-columns: 1fr;
+      justify-self: center;
+      grid-column: 1;
+  }
+
+  .cursos .funfacts h2{
+      justify-self: center;
+  }
+
+  .cursos .my_skills h2{
+      justify-self: center;
+  }
+
+  .cursos .my_skills{
+      
+      text-align: center;
+      grid-template-columns: 1fr;
+      justify-self: center;
+      grid-column: 1/-1;
+  }
+}
+
+
+
+@media(max-width: 992px){
+
+  .section-div{
+      background-image: url(../img/photo.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+  }
+
+  header .navegacao-primaria{
+      display: none;
+  }
+
+  header {
+      justify-content: space-between;
+      padding: 30px 70px;
+  }
+
+  header i{
+      color:#f7f7f7;
+      font-size: 2rem;
+  }
+
+  header .navegacao-primaria.ativado{
+      background: linear-gradient(rgba(43, 42, 42, 0.176), rgba(46, 46, 46, 0.724));
+      position: absolute;
+      display: grid;
+      top: 80px;
+      color: white;
+      z-index: 1;
+      padding: 30px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      border-radius: 0 0 4px 4px;
+      right: 20px;
+      animation: upSection .8s ease-in-out forwards;
+  }
+
+  .sobre img{
+      grid-column: 1/-1;
+      justify-self: center;
+  }
+  .sobre_conteudo{
+      grid-column: 1/-1;
+  }
+}
+
+/* For small devices */
+/* Remove if you choose, the minimalist design */
+@media screen and (max-width: 320px) {
+  .nav__name {
+    display: none;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .nav__list {
+    justify-content: center;
+    column-gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  body {
+    margin: 0;
+  }
+  .section {
+    padding: 7rem 0 2rem;
+  }
+  .nav {
+    height: calc(var(--header-height) + 1.5rem); /* 4.5rem */
+  }
+  .nav__img {
+    display: none;
+  }
+  .nav__icon {
+    display: none;
+  }
+  .nav__name {
+    font-size: var(--normal-font-size);
+    /* display: block; */ /* Minimalist design, visible labels */
+  }
+  .nav__link:hover {
+    color: var(--first-color);
+  }
+
+  /* First design, remove if you choose the minimalist design */
+  .active-link::before {
+    content: '';
+    position: absolute;
+    bottom: -.75rem;
+    width: 4px;
+    height: 4px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+  }
+
+  /* Minimalist design */
+  /* .active-link::before{
+      bottom: -.75rem;
+  } */
+}
+
+
