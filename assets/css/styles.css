@@ -1059,9 +1059,12 @@ main .sobre{
 }
 @media screen and (max-width: 768px) {
   .container_projetos img{
-    height: 29vh;
+    height: 31vh;
     width: auto;
-  }  
+  } 
+  .sobre img{
+    height: 50vh;
+  }
 }
 @media (max-width: 1089px){
   .resume_generica .experience_content, .education_content{
@@ -1110,10 +1113,7 @@ main .sobre{
   }
 }
 
-
-
 @media(max-width: 992px){
-
   .section-div{
       background-image: url(../img/photo.png);
       background-repeat: no-repeat;
@@ -1128,11 +1128,6 @@ main .sobre{
   header {
       justify-content: space-between;
       padding: 30px 70px;
-  }
-
-  header i{
-      color:#f7f7f7;
-      font-size: 2rem;
   }
 
   header .navegacao-primaria.ativado{
@@ -1217,3 +1212,40 @@ main .sobre{
 }
 
 
+@media (max-width: 425px) {
+  .sobre {
+    position: relative;
+  }
+  .section-div{
+    padding: 10px;
+    grid-template-columns: none;
+
+  }
+  .img__capa{
+    top: 0;
+    left: 0;
+    z-index: -777;
+    display: none;
+  }
+  h2,p{
+    position: relative;
+    z-index: 1;
+  } 
+  .sobre_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .sobre_info p {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sobre_info i {
+    gap: 10px;
+  }
+ 
+}
