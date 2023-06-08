@@ -56,7 +56,6 @@ body {
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
@@ -371,11 +370,16 @@ main .sobre{
   color:hsl(174, 63%, 40%);
   display: inline-block;
   padding-right: 15px;
-  font-size: 1.5rem;
+  font-size: 1.5rem;  
 }
 
-.sobre_info p{
-  font-size: .9rem;
+.sobre_info a{
+  font-size: .9rem;  
+  color: inherit;
+}
+
+.sobre_info a:hover {
+  font-size: 1.1em; /* Aumenta o tamanho da fonte em 20% */
 }
 
 @keyframes upSection{
