@@ -1156,6 +1156,16 @@ main .sobre{
   .nav__name {
     display: none;
   }
+  .funfacts {
+    grid-template-columns: 1fr;
+    margin-left: 50px;
+  }
+  
+  .funfacts ul {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* For medium devices */
